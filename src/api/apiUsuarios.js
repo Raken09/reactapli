@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const apiUsuarios = axios.create({
-    //baseURL: 'https://proyectodjango-la3t.onrender.com/appUsers/api',
-    baseURL: 'http://localhost:8000/appUsers/api/',
+    baseURL: 'https://proyectodjango-la3t.onrender.com/appUsers/api',
+    //baseURL: 'http://localhost:8000/appUsers/api/',
 })
 
 export const obtenerUsuariosRegulaes = () => apiUsuarios.get(`/usuarioregular`) // Se hace una peticion get a la ruta usuarioregular
